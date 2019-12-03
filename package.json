@@ -1,0 +1,33 @@
+{
+  "name": "tmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-changed": "latest",
+    "gulp-concat": "latest",
+    "gulp-file-include": "latest",
+    "gulp-less": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-pug": "latest",
+    "gulp-rename": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "jquery": "latest",
+    "less": "latest",
+    "less-plugin-autoprefix": "latest",
+    "normalize.css": "latest",
+    "uikit": "latest"
+  }
+}
