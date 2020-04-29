@@ -1,4 +1,10 @@
-const { src, dest, parallel, series, watch } = require('gulp');
+const {
+  src,
+  dest,
+  parallel,
+  series,
+  watch
+} = require('gulp');
 const del = require('del');
 const less = require('gulp-less');
 const fileinclude = require('gulp-file-include');
@@ -35,10 +41,12 @@ function html() {
 // PUG
 // =============================================================================
 function pugWay() {
- return src(['_src/pug/**/*.pug', '!_src/pug/includes/**', '!_src/pug/templates/**'])
-   .pipe(pug({ pretty: true })) // чтобы не сжимался на выходе
-   .pipe(dest('build'))
-   .pipe(browserSync.stream());
+  return src(['_src/pug/**/*.pug', '!_src/pug/includes/**', '!_src/pug/templates/**'])
+    .pipe(pug({
+      pretty: true
+    })) // чтобы не сжимался на выходе
+    .pipe(dest('build'))
+    .pipe(browserSync.stream());
 }
 
 // =============================================================================
@@ -60,7 +68,10 @@ function styles() {
   return src('_src/less/styles.less')
     .pipe(sourcemaps.init())
     .pipe(less())
-    .pipe(autoprefixer({ overrideBrowserslist: ['last 5 versions'], cascade: false }))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 5 versions'],
+      cascade: false
+    }))
     .pipe(sourcemaps.write('./'))
     .pipe(dest('build/css'))
     .pipe(browserSync.stream());
@@ -70,7 +81,9 @@ function styles() {
 // КОПИРУЕТ ФАЙЛЫ И ПАПКИ ИЗ SRC В BUILD
 // =============================================================================
 function copyFiles() {
-  return src(['_src/img/**', '_src/fonts/**', '_src/*.ico', '_src/robots.txt'], { 'base': '_src' }) // base треб. для кор-го переноса файлов и папок (для fonts)
+  return src(['_src/img/**', '_src/fonts/**', '_src/*.ico', '_src/robots.txt'], {
+      'base': '_src'
+    }) // base треб. для кор-го переноса файлов и папок (для fonts)
     .pipe(dest('build'));
 }
 
@@ -80,7 +93,7 @@ function copyFiles() {
 function watching() {
   browserSync.init({
     server: {
-      baseDir: './build'  // сервер запускается в этой директории
+      baseDir: './build' // сервер запускается в этой директории
     },
     browser: ["chrome"]
   });

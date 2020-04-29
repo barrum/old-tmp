@@ -5,22 +5,16 @@
 @bg-yellow: #ffe650;
 @bg-btn: #ed1c24;
 @link: #211d70;
-@bg-muted: #f3f3f3;
+@bg-muted: #f3f3f3; // @import "uikit/_import.less"; // включить если нужен фреймворк
 
-// @import "uikit/_import.less"; // включить если нужен фреймворк
 @import "components/_import.less";
-@import "outlines.less";
-
-
-// Шрифты
+@import "outlines.less"; // Шрифты
 // https://onlinefontconverter.com/ - генератор шрифтов, выбрать woff, woff2
 // https://nomail.com.ua/catalog - каталог шрифтов
 @font-face {
   font-family: 'PNR';
-  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-       url('../fonts/ProximaNova-Regular.woff') format('woff');
+  src: url("../fonts/ProximaNova-Regular.woff2") format('woff2'), url("../fonts/ProximaNova-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 // Свои стили
