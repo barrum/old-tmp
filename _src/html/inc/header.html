@@ -1,6 +1,14 @@
-<div class="uk-section uk-section-primary">
-  <div class="uk-container">
+<div class="section">
+  <div class="container">
     <h1>Шапка сайта, include HTML</h1>
-    <p>Если нужен Pug включи его в Gulpfile.js, там все настроено</p>
-  </div>
+    <p>============= C ФРЕЙМВОРКОМ UIKIT настроить шаги: =============</p>
+    <ul>
+       <li>1. Выполнить таск gulp uikit (скопируются стили и скрипты фреймворка в папку src)</li>
+       <li>2. В таске скрипты расскоментировать return src(['_src/js/uikit-icons.min.js', '_src/js/uikit.min.js', '_src/js/custom.js'])</li>
+       <li>3. В таске скрипты закоментировать return src(['_src/js/custom.js'])</li>
+       <li>4. в index.html и layout.pug закоментировать normalize и jquery</li>
+       <li>5. В styles.less расскоментировать @import "uikit/_import.less";</li>
+       <li>6. Если нужен pug вместо html, то заменить  exports.default = series(clean, parallel(pugWay, styles, scripts, copyFiles), watching);</li>
+    </ul>
+</div>
 </div>

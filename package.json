@@ -11,7 +11,7 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-cache": "latest",
     "gulp-changed": "latest",

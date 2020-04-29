@@ -1,0 +1,42 @@
+/**
+ * Кнопка
+ */
+.button {
+  cursor: pointer;
+  background-color: #ed1c24;
+  color: #fff;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 46px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #de1219;
+  color: #fff;
+}
+
+.button--nav {
+  background-color: transparent;
+  color: @link;
+  border: 2px solid @link;
+}
+
+.button--nav:hover,
+.button--nav:focus {
+  background-color: #1b185c;
+  color: #fff;
+  border-color: #1b185c;
+}

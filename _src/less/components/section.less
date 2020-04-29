@@ -1,0 +1,50 @@
+/**
+ * Секция
+ */
+.section {
+  padding: 40px 0;
+
+  @media (min-width: 960px) {
+    padding: 70px 0;
+  }
+}
+
+// Модификаторы основного компонента
+.section--nopd {
+  padding: 0;
+}
+
+.section--about {
+  background: url(../img/manufacture.jpg) center top no-repeat;
+  background-size: cover;
+  padding-left: 15px;
+  padding-right: 15px;
+  // padding-bottom: 25px;
+  color: #fff;
+  //   @media (min-width: 960px) {
+  //   padding-bottom: 55px;
+  // }
+}
+
+.section--discount {
+  background-color: @bg-yellow;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section--points {
+  background: url(../img/bg-points.jpg) center top no-repeat;
+  background-size: cover;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  color: #fff;
+
+  @media (min-width: 960px) {
+    padding-bottom: 55px;
+  }
+}
+
+.section--footer {
+  background-color: @bg-muted;
+}

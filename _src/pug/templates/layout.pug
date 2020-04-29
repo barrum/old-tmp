@@ -6,7 +6,11 @@ html(lang="ru")
     block title
       title Дефолт
     link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet")
+    //  Закоментировать normalize если используется uikit
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
     link(rel="stylesheet", href="css/styles.css")
+    //  Закоментировать jquery если используется uikit
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js")
     script(src="js/scripts.js")
   body
     block content

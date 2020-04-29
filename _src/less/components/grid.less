@@ -1,0 +1,36 @@
+/**
+ * Сетка
+ */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  letter-spacing: -.36em; // убираем лшний отступ
+}
+
+// мобильные
+.col {
+  letter-spacing: normal; // убираем наследуемость
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 30px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col--vam {
+  vertical-align: middle;
+}
+.col--2 {
+  width: calc(100% / 2 - 30px);
+}
+.col--3 {
+  width: calc(100% / 3 - 30px);
+}
+// планшеты
+@media (min-width: 640px) {
+  .col--s2 {
+    width: calc(100% / 2 - 30px);
+  }
+  .col--s3 {
+    width: calc(100% / 3 - 30px);
+  }
+}
